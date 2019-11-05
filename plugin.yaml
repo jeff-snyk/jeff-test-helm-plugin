@@ -1,4 +1,5 @@
 name: "jeff-test-helm-plugin"
+version: "0.0.0"
 usage: "test stuff"
 description: |-
   "test plugin"
