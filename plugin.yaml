@@ -1,0 +1,13 @@
+name: "jeff-test-helm-plugin"
+version: "1.0.0"
+usage: "test stuff"
+description: |-
+  "test plugin"
+command: "$HELM_PLUGIN_DIR/scripts/run.sh"
+
+hooks:
+  install: "cd $HELM_PLUGIN_DIR; ./scripts/install.sh"
+  update: "cd $HELM_PLUGIN_DIR; ./scripts/install.sh"
+
+ignoreFlags: false
+useTunnel: false
